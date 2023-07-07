@@ -1,0 +1,31 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: demo-gateway
+  cloud:
+    config:
+      enabled: false
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+        enabled: false
+      config:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+        prefix: demo-gateway
+        file-extension: yml
+        enabled: false
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8719
+        port: 8719
+  main:
+    allow-bean-definition-overriding: true
+
+logging:
+  config: classpath:logback.xml

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" scan="true" scanPeriod="30 minutes">
+
+
+    <!-- 当前日志存放路径（路径末尾不要带“/”）,设置默认值 -->
+    <property name="LOG_HOME" value="logs"/>
+    <!-- 历史归档日志存放路径（路径末尾不要带“/”）,设置默认值 -->
+    <property name="LOG_HISTORY_HOME" value="logs/history"/>
+    <!-- 当前日志输出格式 -->
+    <property name="PATTERN" value="%d{MM-dd HH:mm:ss.SSS}|%highlight(%level)|%logger{36}:%line|%thread|%X{traceId}|%msg%n"/>
+
+
+
+    <!-- 控制台输出 -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+        <!--展示格式 layout-->
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>
+                <pattern>${PATTERN}</pattern>
+            </pattern>
+        </layout>
+    </appender>
+
+    <!-- 日志文件输出 -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/info.log</file>
+        <append>true</append>
+        <!--定义日志滚动的策略-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- 日志最大的历史7天 -->
+            <maxHistory>7</maxHistory>
+            <!--每个日志文件最大100MB-->
+            <maxFileSize>100MB</maxFileSize>
+            <!--用来指定日志文件的上限大小，那么到了这个值，就会删除旧的日志-->
+            <totalSizeCap>10GB</totalSizeCap>
+            <fileNamePattern>${LOG_HISTORY_HOME}/info.%d{yyyy-MM-dd}.log.%i.gz</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>${PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+
+    <springProfile name="dev">
+        <root level="DEBUG">
+            <appender-ref ref="CONSOLE"/>
+            <appender-ref ref="FILE"/>
+        </root>
+    </springProfile>
+
+    <springProfile name="test">
+        <root level="INFO">
+            <appender-ref ref="FILE"/>
+        </root>
+    </springProfile>
+
+    <springProfile name="prod">
+        <root level="INFO">
+            <appender-ref ref="FILE"/>
+        </root>
+    </springProfile>
+
+</configuration>

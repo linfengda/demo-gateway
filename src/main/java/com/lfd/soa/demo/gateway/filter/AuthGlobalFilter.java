@@ -41,15 +41,16 @@ public class AuthGlobalFilter implements GlobalFilter {
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         URI uri = exchange.getRequest().getURI();
         HttpHeaders headers = exchange.getRequest().getHeaders();
-        String serviceName = headers.getFirst("SERVICE");
-        log.info("url = {}, serviceName = {}", uri.getPath(), serviceName);
-        if (!StringUtils.isEmpty(serviceName)) {
-            WebSessionStrategy strategy = webSessionStrategyFactory.getSessionStrategy(serviceName);
+        String service = headers.getFirst("SERVICE");
+        log.info("url = {}, service = {}", uri.getPath(), service);
+        if (!StringUtils.isEmpty(service)) {
+            WebSessionStrategy strategy = webSessionStrategyFactory.getSessionStrategy(service);
             if (null != strategy) {
                 return strategy.sessionAuth(exchange, chain);
             }
         }
-        return responseChain(exchange, "非法请求", HttpStatus.UNAUTHORIZED);
+        return chain.filter(exchange);
+        //return responseChain(exchange, "非法请求", HttpStatus.UNAUTHORIZED);
     }
 
     private static Mono<Void> responseChain(ServerWebExchange exchange, String msg, HttpStatus status) {

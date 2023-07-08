@@ -1,12 +1,9 @@
 spring:
   cloud:
     gateway:
+      enabled: true
       routes:
-        - id: product_route
-          uri: lb://product-service
+        - id: demo_route
+          uri: http://localhost:9000
           predicates:
-            - Path=/product-serv/**
-        - id: order_route
-          uri: lb://order-service
-          predicates:
-            - Path=/order-serv/**
+            - Path=/demo-serv/**

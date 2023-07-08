@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73645f92-ba9c-4605-9a3f-f187a6d846af" name="Default Changelist" comment="" />
+    <list default="true" id="73645f92-ba9c-4605-9a3f-f187a6d846af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lfd/soa/demo/gateway/WebSessionStrategyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lfd/soa/demo/gateway/filter/AuthGlobalFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lfd/soa/demo/gateway/handler/OrderServiceSessionStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lfd/soa/demo/gateway/handler/ProductServiceSessionStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lfd/soa/demo/gateway/handler/WebSessionStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lfd/soa/demo/gateway/util/JsonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lfd/soa/demo/gateway/GatewayConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lfd/soa/demo/gateway/config/GatewayConfiguration.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,11 +22,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2SEt1X85omj38ArvZSATm8Sj7Qx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,6 +46,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
@@ -38,6 +58,9 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lfd.soa.demo.gateway.util" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
@@ -48,7 +71,7 @@
       <module name="demo-gateway" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lfd.soa.demo.gateway.*" />
+          <option name="PATTERN" value="com.lfd.soa.demo.gateway.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -61,7 +84,7 @@
       <module name="demo-gateway" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lfd.soa.demo.gateway.*" />
+          <option name="PATTERN" value="com.lfd.soa.demo.gateway.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,7 +96,7 @@
       <module name="demo-gateway" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lfd.soa.demo.gateway.*" />
+          <option name="PATTERN" value="com.lfd.soa.demo.gateway.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,7 +131,8 @@
       <option name="presentableId" value="Default" />
       <updated>1688723353996</updated>
       <workItem from="1688723355602" duration="4379000" />
-      <workItem from="1688732799354" duration="9633000" />
+      <workItem from="1688732799354" duration="9950000" />
+      <workItem from="1688776412565" duration="3018000" />
     </task>
     <servers />
   </component>
@@ -124,65 +148,73 @@
       <screen x="0" y="23" width="1440" height="792" />
     </state>
     <state x="184" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.792@0.23.1440.792" timestamp="1688742708157" />
-    <state width="1398" height="641" key="GridCell.Tab.0.bottom" timestamp="1688743217544">
+    <state x="533" y="135" key="#com.intellij.ide.util.MemberChooser" timestamp="1688785848059">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="641" key="GridCell.Tab.0.bottom/0.23.1440.792@0.23.1440.792" timestamp="1688743217544" />
-    <state width="1398" height="641" key="GridCell.Tab.0.center" timestamp="1688743217542">
+    <state x="533" y="135" key="#com.intellij.ide.util.MemberChooser/0.23.1440.792@0.23.1440.792" timestamp="1688785848059" />
+    <state width="1398" height="641" key="GridCell.Tab.0.bottom" timestamp="1688743597653">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="641" key="GridCell.Tab.0.center/0.23.1440.792@0.23.1440.792" timestamp="1688743217542" />
-    <state width="1398" height="641" key="GridCell.Tab.0.left" timestamp="1688743217541">
+    <state width="1398" height="641" key="GridCell.Tab.0.bottom/0.23.1440.792@0.23.1440.792" timestamp="1688743597653" />
+    <state width="1398" height="641" key="GridCell.Tab.0.center" timestamp="1688743597651">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="641" key="GridCell.Tab.0.left/0.23.1440.792@0.23.1440.792" timestamp="1688743217541" />
-    <state width="1398" height="641" key="GridCell.Tab.0.right" timestamp="1688743217543">
+    <state width="1398" height="641" key="GridCell.Tab.0.center/0.23.1440.792@0.23.1440.792" timestamp="1688743597651" />
+    <state width="1398" height="641" key="GridCell.Tab.0.left" timestamp="1688743597650">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="641" key="GridCell.Tab.0.right/0.23.1440.792@0.23.1440.792" timestamp="1688743217543" />
-    <state width="1398" height="641" key="GridCell.Tab.1.bottom" timestamp="1688743217545">
+    <state width="1398" height="641" key="GridCell.Tab.0.left/0.23.1440.792@0.23.1440.792" timestamp="1688743597650" />
+    <state width="1398" height="641" key="GridCell.Tab.0.right" timestamp="1688743597652">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="641" key="GridCell.Tab.1.bottom/0.23.1440.792@0.23.1440.792" timestamp="1688743217545" />
-    <state width="1398" height="641" key="GridCell.Tab.1.center" timestamp="1688743217545">
+    <state width="1398" height="641" key="GridCell.Tab.0.right/0.23.1440.792@0.23.1440.792" timestamp="1688743597652" />
+    <state width="1398" height="641" key="GridCell.Tab.1.bottom" timestamp="1688743597654">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="641" key="GridCell.Tab.1.center/0.23.1440.792@0.23.1440.792" timestamp="1688743217545" />
-    <state width="1398" height="641" key="GridCell.Tab.1.left" timestamp="1688743217544">
+    <state width="1398" height="641" key="GridCell.Tab.1.bottom/0.23.1440.792@0.23.1440.792" timestamp="1688743597654" />
+    <state width="1398" height="641" key="GridCell.Tab.1.center" timestamp="1688743597654">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="641" key="GridCell.Tab.1.left/0.23.1440.792@0.23.1440.792" timestamp="1688743217544" />
-    <state width="1398" height="641" key="GridCell.Tab.1.right" timestamp="1688743217545">
+    <state width="1398" height="641" key="GridCell.Tab.1.center/0.23.1440.792@0.23.1440.792" timestamp="1688743597654" />
+    <state width="1398" height="641" key="GridCell.Tab.1.left" timestamp="1688743597653">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="641" key="GridCell.Tab.1.right/0.23.1440.792@0.23.1440.792" timestamp="1688743217545" />
-    <state width="1398" height="641" key="GridCell.Tab.2.bottom" timestamp="1688743217547">
+    <state width="1398" height="641" key="GridCell.Tab.1.left/0.23.1440.792@0.23.1440.792" timestamp="1688743597653" />
+    <state width="1398" height="641" key="GridCell.Tab.1.right" timestamp="1688743597654">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="641" key="GridCell.Tab.2.bottom/0.23.1440.792@0.23.1440.792" timestamp="1688743217547" />
-    <state width="1398" height="641" key="GridCell.Tab.2.center" timestamp="1688743217546">
+    <state width="1398" height="641" key="GridCell.Tab.1.right/0.23.1440.792@0.23.1440.792" timestamp="1688743597654" />
+    <state width="1398" height="641" key="GridCell.Tab.2.bottom" timestamp="1688743597655">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="641" key="GridCell.Tab.2.center/0.23.1440.792@0.23.1440.792" timestamp="1688743217546" />
-    <state width="1398" height="641" key="GridCell.Tab.2.left" timestamp="1688743217546">
+    <state width="1398" height="641" key="GridCell.Tab.2.bottom/0.23.1440.792@0.23.1440.792" timestamp="1688743597655" />
+    <state width="1398" height="641" key="GridCell.Tab.2.center" timestamp="1688743597654">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="641" key="GridCell.Tab.2.left/0.23.1440.792@0.23.1440.792" timestamp="1688743217546" />
-    <state width="1398" height="641" key="GridCell.Tab.2.right" timestamp="1688743217546">
+    <state width="1398" height="641" key="GridCell.Tab.2.center/0.23.1440.792@0.23.1440.792" timestamp="1688743597654" />
+    <state width="1398" height="641" key="GridCell.Tab.2.left" timestamp="1688743597654">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="641" key="GridCell.Tab.2.right/0.23.1440.792@0.23.1440.792" timestamp="1688743217546" />
+    <state width="1398" height="641" key="GridCell.Tab.2.left/0.23.1440.792@0.23.1440.792" timestamp="1688743597654" />
+    <state width="1398" height="641" key="GridCell.Tab.2.right" timestamp="1688743597655">
+      <screen x="0" y="23" width="1440" height="792" />
+    </state>
+    <state width="1398" height="641" key="GridCell.Tab.2.right/0.23.1440.792@0.23.1440.792" timestamp="1688743597655" />
     <state x="208" y="23" key="SettingsEditor" timestamp="1688733972603">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
     <state x="208" y="23" key="SettingsEditor/0.23.1440.792@0.23.1440.792" timestamp="1688733972603" />
+    <state x="373" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1688787477502">
+      <screen x="0" y="23" width="1440" height="792" />
+    </state>
+    <state x="373" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.792@0.23.1440.792" timestamp="1688787477502" />
     <state x="98" y="123" key="new project wizard" timestamp="1688732533859">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
     <state x="98" y="123" key="new project wizard/0.23.1440.792@0.23.1440.792" timestamp="1688732533859" />
-    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup" timestamp="1688738727051">
+    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup" timestamp="1688787944661">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup/0.23.1440.792@0.23.1440.792" timestamp="1688738727051" />
+    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup/0.23.1440.792@0.23.1440.792" timestamp="1688787944661" />
   </component>
 </project>

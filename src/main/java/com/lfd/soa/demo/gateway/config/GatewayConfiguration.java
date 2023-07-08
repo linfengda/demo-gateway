@@ -1,4 +1,4 @@
-package com.lfd.soa.demo.gateway;
+package com.lfd.soa.demo.gateway.config;
 
 import com.alibaba.csp.sentinel.adapter.gateway.common.SentinelGatewayConstants;
 import com.alibaba.csp.sentinel.adapter.gateway.common.api.ApiDefinition;

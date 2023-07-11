@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73645f92-ba9c-4605-9a3f-f187a6d846af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lfd/soa/demo/gateway/config/RateLimitProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lfd/soa/demo/gateway/filter/RateLimitGlobalFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lfd/soa/demo/gateway/limit/RateLimitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lfd/soa/demo/gateway/limit/SimpleRedisRateLimiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lfd/soa/demo/gateway/util/ServerWebExchangeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/script/simple_request_rate_limiter.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lfd/soa/demo/gateway/config/ContextPathConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lfd/soa/demo/gateway/filter/AuthGlobalFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lfd/soa/demo/gateway/filter/AuthGlobalFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +53,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.43793103" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lfd.soa.demo.gateway.limit" />
+      <recent name="com.lfd.soa.demo.gateway.filter" />
       <recent name="com.lfd.soa.demo.gateway.controller" />
       <recent name="com.lfd.soa.demo.gateway.util" />
     </key>
@@ -65,7 +78,7 @@
       <module name="demo-gateway" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lfd.soa.demo.gateway.config.*" />
+          <option name="PATTERN" value="com.lfd.soa.demo.gateway.limit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,7 +91,7 @@
       <module name="demo-gateway" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lfd.soa.demo.gateway.config.*" />
+          <option name="PATTERN" value="com.lfd.soa.demo.gateway.limit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,7 +103,7 @@
       <module name="demo-gateway" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lfd.soa.demo.gateway.config.*" />
+          <option name="PATTERN" value="com.lfd.soa.demo.gateway.limit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,8 +142,9 @@
       <workItem from="1688776412565" duration="18800000" />
       <workItem from="1688817686991" duration="6977000" />
       <workItem from="1688832196504" duration="22000" />
-      <workItem from="1688834678239" duration="383000" />
-      <workItem from="1688835180848" duration="88000" />
+      <workItem from="1688836150366" duration="67000" />
+      <workItem from="1688919731063" duration="1612000" />
+      <workItem from="1689038525187" duration="11717000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 提交filter">
       <created>1688788006998</created>
@@ -145,6 +159,85 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/Users/linfengda/IdeaProjects/demo-gateway/src/main/resources" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: 提交filter" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: 提交filter" />
@@ -154,14 +247,14 @@
       <screen x="0" y="23" width="1440" height="792" />
     </state>
     <state x="320" y="84" width="811" height="669" key="#Project_Structure/0.23.1440.792@0.23.1440.792" timestamp="1688732345413" />
-    <state x="184" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1688742708157">
+    <state x="184" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1689055474321">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state x="184" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.792@0.23.1440.792" timestamp="1688742708157" />
-    <state x="533" y="135" key="#com.intellij.ide.util.MemberChooser" timestamp="1688785848059">
+    <state x="184" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.792@0.23.1440.792" timestamp="1689055474321" />
+    <state x="533" y="135" key="#com.intellij.ide.util.MemberChooser" timestamp="1689039227528">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state x="533" y="135" key="#com.intellij.ide.util.MemberChooser/0.23.1440.792@0.23.1440.792" timestamp="1688785848059" />
+    <state x="533" y="135" key="#com.intellij.ide.util.MemberChooser/0.23.1440.792@0.23.1440.792" timestamp="1689039227528" />
     <state x="303" y="23" width="833" height="792" key="CommitChangelistDialog2" timestamp="1688788006751">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
@@ -170,66 +263,74 @@
       <screen x="0" y="23" width="1440" height="792" />
     </state>
     <state width="480" height="466" key="DebuggerActiveHint/0.23.1440.792@0.23.1440.792" timestamp="1688795166381" />
-    <state width="1398" height="201" key="GridCell.Tab.0.bottom" timestamp="1688835160678">
+    <state x="100" y="123" width="1240" height="592" key="DiffContextDialog" timestamp="1688836134727">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="201" key="GridCell.Tab.0.bottom/0.23.1440.792@0.23.1440.792" timestamp="1688835160678" />
-    <state width="1398" height="201" key="GridCell.Tab.0.center" timestamp="1688835160677">
+    <state x="100" y="123" width="1240" height="592" key="DiffContextDialog/0.23.1440.792@0.23.1440.792" timestamp="1688836134727" />
+    <state width="1398" height="312" key="GridCell.Tab.0.bottom" timestamp="1689060156058">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="201" key="GridCell.Tab.0.center/0.23.1440.792@0.23.1440.792" timestamp="1688835160677" />
-    <state width="1398" height="201" key="GridCell.Tab.0.left" timestamp="1688835160677">
+    <state width="1398" height="312" key="GridCell.Tab.0.bottom/0.23.1440.792@0.23.1440.792" timestamp="1689060156058" />
+    <state width="1398" height="312" key="GridCell.Tab.0.center" timestamp="1689060156056">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="201" key="GridCell.Tab.0.left/0.23.1440.792@0.23.1440.792" timestamp="1688835160677" />
-    <state width="1398" height="201" key="GridCell.Tab.0.right" timestamp="1688835160678">
+    <state width="1398" height="312" key="GridCell.Tab.0.center/0.23.1440.792@0.23.1440.792" timestamp="1689060156056" />
+    <state width="1398" height="312" key="GridCell.Tab.0.left" timestamp="1689060156056">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="201" key="GridCell.Tab.0.right/0.23.1440.792@0.23.1440.792" timestamp="1688835160678" />
-    <state width="1398" height="281" key="GridCell.Tab.1.bottom" timestamp="1688831748413">
+    <state width="1398" height="312" key="GridCell.Tab.0.left/0.23.1440.792@0.23.1440.792" timestamp="1689060156056" />
+    <state width="1398" height="312" key="GridCell.Tab.0.right" timestamp="1689060156057">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.1.bottom/0.23.1440.792@0.23.1440.792" timestamp="1688831748413" />
-    <state width="1398" height="281" key="GridCell.Tab.1.center" timestamp="1688831748413">
+    <state width="1398" height="312" key="GridCell.Tab.0.right/0.23.1440.792@0.23.1440.792" timestamp="1689060156057" />
+    <state width="1398" height="312" key="GridCell.Tab.1.bottom" timestamp="1689060156059">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.1.center/0.23.1440.792@0.23.1440.792" timestamp="1688831748413" />
-    <state width="1398" height="281" key="GridCell.Tab.1.left" timestamp="1688831748412">
+    <state width="1398" height="312" key="GridCell.Tab.1.bottom/0.23.1440.792@0.23.1440.792" timestamp="1689060156059" />
+    <state width="1398" height="312" key="GridCell.Tab.1.center" timestamp="1689060156058">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.1.left/0.23.1440.792@0.23.1440.792" timestamp="1688831748412" />
-    <state width="1398" height="281" key="GridCell.Tab.1.right" timestamp="1688831748413">
+    <state width="1398" height="312" key="GridCell.Tab.1.center/0.23.1440.792@0.23.1440.792" timestamp="1689060156058" />
+    <state width="1398" height="312" key="GridCell.Tab.1.left" timestamp="1689060156058">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.1.right/0.23.1440.792@0.23.1440.792" timestamp="1688831748413" />
-    <state width="1398" height="281" key="GridCell.Tab.2.bottom" timestamp="1688831748414">
+    <state width="1398" height="312" key="GridCell.Tab.1.left/0.23.1440.792@0.23.1440.792" timestamp="1689060156058" />
+    <state width="1398" height="312" key="GridCell.Tab.1.right" timestamp="1689060156059">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.2.bottom/0.23.1440.792@0.23.1440.792" timestamp="1688831748414" />
-    <state width="1398" height="281" key="GridCell.Tab.2.center" timestamp="1688831748414">
+    <state width="1398" height="312" key="GridCell.Tab.1.right/0.23.1440.792@0.23.1440.792" timestamp="1689060156059" />
+    <state width="1398" height="312" key="GridCell.Tab.2.bottom" timestamp="1689060156060">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.2.center/0.23.1440.792@0.23.1440.792" timestamp="1688831748414" />
-    <state width="1398" height="281" key="GridCell.Tab.2.left" timestamp="1688831748414">
+    <state width="1398" height="312" key="GridCell.Tab.2.bottom/0.23.1440.792@0.23.1440.792" timestamp="1689060156060" />
+    <state width="1398" height="312" key="GridCell.Tab.2.center" timestamp="1689060156059">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.2.left/0.23.1440.792@0.23.1440.792" timestamp="1688831748414" />
-    <state width="1398" height="281" key="GridCell.Tab.2.right" timestamp="1688831748414">
+    <state width="1398" height="312" key="GridCell.Tab.2.center/0.23.1440.792@0.23.1440.792" timestamp="1689060156059" />
+    <state width="1398" height="312" key="GridCell.Tab.2.left" timestamp="1689060156059">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.2.right/0.23.1440.792@0.23.1440.792" timestamp="1688831748414" />
-    <state x="431" y="142" key="MultipleFileMergeDialog" timestamp="1688835091825">
+    <state width="1398" height="312" key="GridCell.Tab.2.left/0.23.1440.792@0.23.1440.792" timestamp="1689060156059" />
+    <state width="1398" height="312" key="GridCell.Tab.2.right" timestamp="1689060156060">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state x="431" y="142" key="MultipleFileMergeDialog/0.23.1440.792@0.23.1440.792" timestamp="1688835091825" />
-    <state x="208" y="23" key="SettingsEditor" timestamp="1688835286370">
+    <state width="1398" height="312" key="GridCell.Tab.2.right/0.23.1440.792@0.23.1440.792" timestamp="1689060156060" />
+    <state x="497" y="137" key="RollbackChangesDialog" timestamp="1688836115481">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state x="208" y="23" key="SettingsEditor/0.23.1440.792@0.23.1440.792" timestamp="1688835286370" />
+    <state x="497" y="137" key="RollbackChangesDialog/0.23.1440.792@0.23.1440.792" timestamp="1688836115481" />
+    <state x="208" y="23" key="SettingsEditor" timestamp="1688733972603">
+      <screen x="0" y="23" width="1440" height="792" />
+    </state>
+    <state x="208" y="23" key="SettingsEditor/0.23.1440.792@0.23.1440.792" timestamp="1688733972603" />
     <state width="720" height="396" key="XDebugger.FullValuePopup" timestamp="1688823452460">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
     <state width="720" height="396" key="XDebugger.FullValuePopup/0.23.1440.792@0.23.1440.792" timestamp="1688823452460" />
+    <state x="326" y="377" width="1240" height="592" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1688835915802">
+      <screen x="0" y="23" width="1440" height="792" />
+    </state>
+    <state x="326" y="377" width="1240" height="592" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.792@0.23.1440.792" timestamp="1688835915802" />
     <state x="373" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1688787477502">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
@@ -238,33 +339,13 @@
       <screen x="0" y="23" width="1440" height="792" />
     </state>
     <state x="378" y="176" width="683" height="486" key="find.popup/0.23.1440.792@0.23.1440.792" timestamp="1688823610500" />
-    <state x="406" y="217" key="git4idea.merge.GitPullDialog" timestamp="1688835059972">
-      <screen x="0" y="23" width="1440" height="792" />
-    </state>
-    <state x="406" y="217" key="git4idea.merge.GitPullDialog/0.23.1440.792@0.23.1440.792" timestamp="1688835059972" />
     <state x="98" y="123" key="new project wizard" timestamp="1688732533859">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
     <state x="98" y="123" key="new project wizard/0.23.1440.792@0.23.1440.792" timestamp="1688732533859" />
-    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup" timestamp="1688832199903">
+    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup" timestamp="1689060447566">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup/0.23.1440.792@0.23.1440.792" timestamp="1688832199903" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-gateway-server/2.2.7.RELEASE/spring-cloud-gateway-server-2.2.7.RELEASE-sources.jar!/org/springframework/cloud/gateway/filter/NettyRoutingFilter.java</url>
-          <line>110</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-gateway-server/2.2.7.RELEASE/spring-cloud-gateway-server-2.2.7.RELEASE-sources.jar!/org/springframework/cloud/gateway/filter/NettyRoutingFilter.java</url>
-          <line>107</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup/0.23.1440.792@0.23.1440.792" timestamp="1689060447566" />
   </component>
 </project>

@@ -1,4 +1,9 @@
 spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    timeout: 5000
   cloud:
     gateway:
       enabled: true
@@ -7,3 +12,13 @@ spring:
           uri: http://localhost:9000
           predicates:
             - Path=/demo-serv/**
+gateway:
+  rate:
+    limit:
+      list:
+          #限流的url
+        - url: /demo-serv/productionOrder/getDetail
+          #令牌桶总容量
+          burstCapacity: 1000
+          #令牌桶每秒填充平均速率
+          replenishRate: 100

@@ -1,7 +1,5 @@
 server:
   port: 9001
-#  servlet:
-#    context-path: /demo-gateway
 
 spring:
   application:
@@ -22,10 +20,6 @@ spring:
         prefix: demo-gateway
         file-extension: yml
         enabled: false
-    sentinel:
-      transport:
-        dashboard: 127.0.0.1:8719
-        port: 8719
   main:
     allow-bean-definition-overriding: true
 

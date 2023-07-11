@@ -34,6 +34,17 @@
             <version>1.18.12</version>
         </dependency>
 
+        <!--redis集成-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
         <!-- 网关 -->
         <dependency>
             <groupId>io.projectreactor.netty</groupId>
@@ -52,5 +63,32 @@
             <artifactId>sentinel-spring-cloud-gateway-adapter</artifactId>
             <version>${sentinel.version}</version>
         </dependency>
+
+        <!-- nacos相关配置 -->
+<!--        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+                    <groupId>org.springframework.cloud</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        &lt;!&ndash; nacos-cloud依赖该包，缺少导致读取不到配置 &ndash;&gt;
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+            <version>3.0.3</version>
+        </dependency>
+        &lt;!&ndash;spring 均衡负载&ndash;&gt;
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+        </dependency>-->
     </dependencies>
 </project>
